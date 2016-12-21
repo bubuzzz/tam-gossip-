@@ -8,10 +8,13 @@ import {
 } from 'react-native';
 
 export default class mobile extends React.Component {
-    render() {
+  constructor( props ) {
+    super( props );
+  }
 
-      return ( < Text > Hello World < /Text>);
-      }
-    }
+  render() {
+    return ( <Text> Hello World </Text>);
+  }
+}
 
-    AppRegistry.registerComponent( 'mobile', () => mobile );
+AppRegistry.registerComponent( 'mobile', () => mobile );
